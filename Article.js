@@ -3,35 +3,36 @@ import { View, Text, StyleSheet, ImageBackground, Platform, Dimensions } from 'r
 
 const Article = () => (
     <View style={styles.container}>
-        <ImageBackground source={require("./assets/logo.jpg")} style={styles.image}>
-            <Text style={styles.text}>Hello Abhiraj</Text>
+        <ImageBackground source={require("./assets/mountain.jpg")} style={styles.image}>
         </ImageBackground>
+        <View>
+            <Text style={styles.text}>Trek the Road Not Taken: 5 Himalayan Treks to
+                Unleash the Adventurer in You This Summer</Text>
+        </View>
     </View>
 );
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        // width:'100%',
-        // height:'100%'
-        // borderWidth:5
+
     },
     image: {
         flex: 1,
         justifyContent: 'center',
-      alignItems:'center',
-        resizeMode:'cover',
+        alignItems: 'center',
+        resizeMode: 'cover',
         height: Dimensions.get('screen').height,
         width: Dimensions.get('screen').width
-        
+
     },
     text: {
-        color: 'white',
-        fontSize: 42,
-        lineHeight: 84,
+        color: '#f53692',
+        fontSize: 20,
+        lineHeight: 20,
         fontWeight: 'bold',
-        textAlign: 'center',
-        backgroundColor: '#000000c0',
+        textAlign: 'left',
+
     },
 });
 
